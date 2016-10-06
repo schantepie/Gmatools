@@ -6,7 +6,7 @@ This package contain several functions to comparing Gmatrice among populations.
 The functions are designed to use the MCMCglmm outputs.
 
 ~~~~~~~~~~~~~~~~~
-To install Gmatools on R
+How to install Gmatools on R
 
 library(devtools)
 
