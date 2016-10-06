@@ -2,7 +2,7 @@
 \alias{krzanowski}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-krzanowski function for MCMCglmm output
+Function to estimate angles between subspace using MCMCglmm output
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

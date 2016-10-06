@@ -2,7 +2,7 @@
 \alias{thining_scale}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-function to merge results from multiple MCMCglmmm outputs, perform scaling and increase thining intarval
+Function to merge results from multiple MCMCglmmm outputs, perform scaling and increase thining intarval
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

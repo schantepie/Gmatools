@@ -2,7 +2,7 @@
 \alias{shape}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-function to estimate eccentricity, variance on Gmax and volume.
+Function to estimate eccentricity, variance on Gmax and volume.
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

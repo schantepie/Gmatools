@@ -2,7 +2,7 @@
 \alias{evolvability_all}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-function to estimate Evolvability Conditoinal evolvability, autonomy and Integration
+Function to estimate Evolvability Conditoinal evolvability, autonomy and Integration
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

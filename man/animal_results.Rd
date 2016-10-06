@@ -2,7 +2,7 @@
 \alias{animal_results}
 \docType{data}
 \title{
-results from 3 animal models
+Output from 3 animal models for testing purpose
 }
 \description{
 animal results contains three results from animal model done with MCMCglmm

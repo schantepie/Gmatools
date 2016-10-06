@@ -2,7 +2,7 @@
 \alias{tensor_analyse}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-function to realize the tensor analysis from Hines et al. 2009
+Function to realize the tensor analysis from Hines et al. 2009
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

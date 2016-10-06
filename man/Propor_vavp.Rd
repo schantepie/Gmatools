@@ -2,7 +2,7 @@
 \alias{Propor_vavp}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-function to test the proportionality between Va and VP
+Function to test the proportionality between VA and VP
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

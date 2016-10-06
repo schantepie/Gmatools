@@ -2,7 +2,7 @@
 \alias{Ddivergence_ova}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-function to estimate Ddivergence
+Function to estimate Ddivergence between matrix based on the Ovaskainen et al. 2008 
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

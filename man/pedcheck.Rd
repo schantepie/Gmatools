@@ -2,7 +2,7 @@
 \alias{pedcheck}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-function to do check and correct some problems in pedigree
+Function to do check and correct some problems in pedigree
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

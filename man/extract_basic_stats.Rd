@@ -2,7 +2,7 @@
 \alias{extract_basic_stats}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-function to extract posterior mode and correlation and draw correlation circles
+Function to extract summary estimates of VCV matrix and draw correlation circles
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

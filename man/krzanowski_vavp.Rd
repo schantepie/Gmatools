@@ -2,7 +2,7 @@
 \alias{krzanowski_vavp}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-krzanowski_vavp
+Function to estimate angles between VA and VP subspace using MCMCglmm output
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
