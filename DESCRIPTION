@@ -1,0 +1,9 @@
+Package: Gmatools
+Type: Package
+Title: A collection of functions for comparing Gmatrix
+Version: 0.37
+Date: 2016-08-05
+Author: Stephane Chantepie
+Maintainer:Stephane Chantepie <chantepie@mnhn.fr>
+Description: This package contains several fonctions with different goals. The primary aim of this package remains to make the exchange the updates of these function easier for collaborators. 
+License: GPL-2
