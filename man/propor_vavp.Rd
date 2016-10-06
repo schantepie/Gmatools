@@ -1,5 +1,5 @@
-\name{Propor_vavp}
-\alias{Propor_vavp}
+\name{propor_vavp}
+\alias{propor_vavp}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Function to test the proportionality between VA and VP

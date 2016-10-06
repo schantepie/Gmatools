@@ -1,4 +1,4 @@
-Propor_vavp <-
+propor_vavp <-
 function(name,names_pop){
   nb_Gmatrix=length(names_pop)*2
   names=as.character(name)
