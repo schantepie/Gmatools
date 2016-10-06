@@ -23,13 +23,7 @@ function(name,names_pop){
   mod[,,1]=model
   for (i in 2:nb_Gmatrix){ 
     model=get(paste(name,i,sep=''))
-    if(allresults==TRUE){
-      model=model$VCV
-      mod[,,i]=model[,agrep (".animal",colnames(model))]
-    }else{
-      mod[,,i]=model
-    }
-
+    mod[,,i]=model
   }
   siter=sample(nb_iter)
   while (length(which(!siter==1:nb_iter))!= nb_iter) siter=sample(nb_iter)
@@ -80,6 +74,6 @@ function(name,names_pop){
   Dmat[lower.tri(Dmat)]<-c(paste(Ddist2[,1]," [",Ddist2[,2],":",Ddist2[,3],"]",sep=""))
   Dmat=t(Dmat)
   dimnames(Dmat)=list(names_pop,names_pop)
-  results<-list(distance=Ddistance_summa,difference=difference_summa,Results_table=Dmat)#,pvalue=Pvalue
+  results<-list(distance=Ddistance_summa,difference=difference_summa,Results_table=Dmat,Ddist=Ddist)#,pvalue=Pvalue
   return(results)
 }
