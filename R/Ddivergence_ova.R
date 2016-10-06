@@ -74,6 +74,6 @@ function(name,names_pop){
   Dmat[lower.tri(Dmat)]<-c(paste(Ddist2[,1]," [",Ddist2[,2],":",Ddist2[,3],"]",sep=""))
   Dmat=t(Dmat)
   dimnames(Dmat)=list(names_pop,names_pop)
-  results<-list(distance=Ddistance_summa,difference=difference_summa,Results_table=Dmat,Ddist=Ddist)#,pvalue=Pvalue
+  results<-list(distance=Ddistance_summa,difference=difference_summa,Results_table=Dmat,dist=dist)#,pvalue=Pvalue
   return(results)
 }
