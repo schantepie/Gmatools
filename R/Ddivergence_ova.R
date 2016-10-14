@@ -29,7 +29,7 @@ function(name,names_pop){
   while (length(which(!siter==1:nb_iter))!= nb_iter) siter=sample(nb_iter)
   sample_mod=mod[siter,,] 
   ################# Function to get distribtion of trait and distance between densities
-  Ddivergence<-function (z = NULL, u = NULL, n = 1000) {
+  Ddivergence<-function (z = NULL, u = NULL, n = 2000) {
     xi <- rmvnorm(n, rep(0, dim(z)[1]),z)
     fx <- dmvnorm(xi, rep(0, dim(z)[1]),z)
     gx <- dmvnorm(xi, rep(0, dim(z)[1]),u)
@@ -61,6 +61,7 @@ function(name,names_pop){
     difference_summa=cbind(posterior.mode(Ddiv),HPDinterval(Ddiv)) 
     # Pvalue=length(Ddiv[Ddiv>0])/nb_iter#}
   }
+  alldist=Ddist
   Ddistance_summa=cbind(posterior.mode(Ddist),HPDinterval(Ddist))
   names_2by2=apply(do.call(rbind,combn(1:(nb_Gmatrix), 2,simplify=F)),1, paste, collapse="_")
   rownames(difference_summa)=names_2by2
@@ -74,6 +75,6 @@ function(name,names_pop){
   Dmat[lower.tri(Dmat)]<-c(paste(Ddist2[,1]," [",Ddist2[,2],":",Ddist2[,3],"]",sep=""))
   Dmat=t(Dmat)
   dimnames(Dmat)=list(names_pop,names_pop)
-  results<-list(distance=Ddistance_summa,difference=difference_summa,Results_table=Dmat,dist=dist)#,pvalue=Pvalue
+  results<-list(distance=Ddistance_summa,difference=difference_summa,Results_table=Dmat,chaindistance=alldist,matdistance=dist)#,pvalue=Pvalue
   return(results)
 }

@@ -1,5 +1,4 @@
-evolvability_all <-
-function(name,names_pop,cpus=1,simu=FALSE,analytic=TRUE){
+evolvability_all <-function(name,names_pop,cpus=1,simu=FALSE,analytic=TRUE){
   
   require(MCMCglmm)
   require(snow)
@@ -9,6 +8,8 @@ function(name,names_pop,cpus=1,simu=FALSE,analytic=TRUE){
   results=list()
   summa_EVOL_MEASURES_beta=array(NA,c(nb_pop,3,5))
   summa_EVOL_MEASURES_analytic=array(NA,c(nb_pop,3,5))
+  EVOL_MEASURES_analytic=array(NA,c(1000,5,nb_pop))
+  
   
 for(i in 1:nb_pop){
   gmat=get(paste(name,i,sep=""))
@@ -89,10 +90,14 @@ if( analytic==TRUE){
     EVOL_MEASURE=mcmc( t(apply(EVOL_MEASURE,1,function(x) simplify2array(x, higher = TRUE))))
     MEASURE=cbind(posterior.mode(EVOL_MEASURE),HPDinterval(EVOL_MEASURE))
     summa_EVOL_MEASURES_analytic[i,,]=t(MEASURE)
+    EVOL_MEASURES_analytic[,,i]=EVOL_MEASURE
     dimnames( summa_EVOL_MEASURES_analytic)=list(names_pop,c("mode","lower","upper"),c("Unconditional_Evolvability","Conditional_Evolvability","Respondability","Autonomy","Integration"))
-    results[["summa_EVOL_MEASURES_analytic"]]=summa_EVOL_MEASURES_analytic
+    results[["summa_EVOL_MEASURES_analytic"]]=list(summa_EVOL_MEASURES_analytic=summa_EVOL_MEASURES_analytic,EVOL_MEASURES_analytic=EVOL_MEASURES_analytic)
     }
-
   }
 return (results)
 }
+
+
+
+
