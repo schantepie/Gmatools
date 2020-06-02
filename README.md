@@ -1,9 +1,9 @@
 # Gmatools
-repository for Gmatools package
+Repository for Gmatools package
 
-This package contain several functions to comparing Gmatrice among populations.
+This package contains several functions which compare G-matrices among populations.
 
-The functions are designed to use the MCMCglmm outputs.
+The functions are designed for using MCMCglmm outputs.
 
 ~~~~~~~~~~~~~~~~~
 How to install Gmatools on R
