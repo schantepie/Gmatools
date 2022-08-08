@@ -68,7 +68,7 @@ if( analytic==TRUE){
       I=var(eig$values)/((mean(eig$values))^2)
       k= dim(G)[1]
       
-      mean_eU=mean(eig$values)/k
+      mean_eU=mean(eig$values)
       mean_eC=H*(1+((2*Iinv)/(k+2)))
       mean_eR = sqrt(mean(eig$values^2))*(1-(I2/(4*(k+2))))
       mean_Auto = (H/mean(eig$values))*(1+2*(I+Iinv-1+(H/mean(eig$values))+2*I*Iinv/(k+2))/(k+2))
