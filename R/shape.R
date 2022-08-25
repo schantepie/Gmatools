@@ -166,14 +166,14 @@ ResMat_Vargmax=(Dmat)
 
   
   results<-list(
-#     diffvoltrace_summa=diffvoltrace_summa,
-#     diffvol_pi_summa=diffvol_pi_summa,
-#     diffEccentricity_summa=diffEccentricity_summa,
-#     diffVar_gmax_summa=diffVar_gmax_summa,
-#     ConfInterval_vol_trace= vol_trace_summa,
-#     ConfInterval_vol_pi= vol_pi_summa,
-#     ConfInterval_Eccentricity= Eccentricity_summa,
-#     ConfIntervalVar_gmax = Var_gmax_summa,
+     diffvoltrace_summa=diffvoltrace_summa,
+     diffvol_pi_summa=diffvol_pi_summa,
+     diffEccentricity_summa=diffEccentricity_summa,
+     diffVar_gmax_summa=diffVar_gmax_summa,
+     ConfInterval_vol_trace= vol_trace_summa,
+     ConfInterval_vol_pi= vol_pi_summa,
+     ConfInterval_Eccentricity= Eccentricity_summa,
+     ConfIntervalVar_gmax = Var_gmax_summa,
     ResMat_volumes=ResMat_volumes,
     ResMat_eccentricity=ResMat_eccentricity,
     ResMat_Vargmax=ResMat_Vargmax
