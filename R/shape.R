@@ -42,19 +42,19 @@ function(name,names_pop){
     
     Vol_traceA=sum(diag(z))
     Vol_traceB=sum(diag(u))
-    dif_vol_trace=Vol_traceA/Vol_traceB
+    dif_vol_trace=Vol_traceA-Vol_traceB
     
     Vol_piA=(1/2)*pi^2*prod(sqrt(A$values))
     Vol_piB=(1/2)*pi^2*prod(sqrt(B$values))
-    dif_vol_pi=Vol_piA/Vol_piB
+    dif_vol_pi=Vol_piA-Vol_piB
     
     EccentricityA=A$values[1]/A$values[2]
     EccentricityB=B$values[1]/B$values[2]
-    dif_Eccentricity=EccentricityA/EccentricityB
+    dif_Eccentricity=EccentricityA-EccentricityB
     
     Var_maxA=abs(A$values[1])/sum(abs(A$values))
     Var_maxB=abs(B$values[1])/sum(abs(B$values))
-    dif_Var_max=Var_maxA/Var_maxB
+    dif_Var_max=Var_maxA-Var_maxB
     #Evol_random=
     result<-list(
       dif_vol_trace=dif_vol_trace,
